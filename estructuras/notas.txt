@@ -1,0 +1,52 @@
+Que es una estructura?
+
+Es una coleccion de uno a mas tipos de elementos
+denominados campos, cada uno de los cuales puede ser
+un tipo de dato diferente.
+
+Supongamos que se desea almacenar los datos de una coleccion de discos compactos (CD) de
+musica. Estos datos pueden ser:
+
+Titulo
+Artista
+Numero de canciones
+Precio
+Fecha de compra
+
+struct coleccion_CD {
+    char titulo [30];
+    char artista [25];
+    int numeroCanciones;
+    float precio;
+    char fechaCompra [20];
+};
+
+int main () {
+    struct coleccion_CD CD1, CD2, CD3;
+}
+
+O
+
+struct coleccion_CD {
+    char titulo [30];
+    char artista [25];
+    int numeroCanciones;
+    float precio;
+    char fechaCompra [20];
+}CD1, CD2, CD3;
+
+Que es una estructura Anidada?
+
+Es una estructura dentro de otra
+
+struct infoDireccion {
+    char direccion [30];
+    char ciudad [20];
+    char provincia [20];
+}
+
+struct empleado {
+    char nombre [20];
+    struct infoDireccion dirEmpleado;
+    double salario;
+}

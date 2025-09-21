@@ -1,0 +1,3 @@
+Crear ejecutable del programa
+	* g++ File_Name.cpp -o FileName
+	* .\nombreDelArchivo
